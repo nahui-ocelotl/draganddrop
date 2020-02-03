@@ -450,12 +450,6 @@
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
-  <NODE id="101" nodename="Styles.v4p" systemname="Styles" filename="Styles.v4p" componentmode="Hidden">
-  <BOUNDS type="Node" left="8400" top="5595" width="100" height="100">
-  </BOUNDS>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
   <NODE id="102" nodename="S (Value)" systemname="S (Value)" componentmode="Hidden">
   <BOUNDS type="Node" left="6960" top="6840" width="100" height="100">
   </BOUNDS>
@@ -519,6 +513,12 @@
   </PIN>
   <PIN pinname="Rows" visible="0" values="|1|">
   </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="109" nodename="styles.v4p" systemname="styles" filename="styles.v4p" componentmode="Hidden">
+  <BOUNDS type="Node" left="9285" top="4890" width="100" height="100">
+  </BOUNDS>
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
@@ -606,8 +606,6 @@
   </LINK>
   <LINK srcnodeid="72" srcpinname="Y Output Value" dstnodeid="75" dstpinname="Switch">
   </LINK>
-  <LINK srcnodeid="101" srcpinname="Layer" dstnodeid="22" dstpinname="Style In">
-  </LINK>
   <LINK srcnodeid="85" srcpinname="Y Output Value" dstnodeid="87" dstpinname="Input 2">
   </LINK>
   <LINK srcnodeid="99" srcpinname="Y Output Value" dstnodeid="87" dstpinname="Input 1">
@@ -629,5 +627,7 @@
   <LINK srcnodeid="89" srcpinname="Output 1" dstnodeid="67" dstpinname="Set">
   </LINK>
   <LINK srcnodeid="89" srcpinname="Output 1" dstnodeid="107" dstpinname="Input">
+  </LINK>
+  <LINK srcnodeid="109" srcpinname="Layer" dstnodeid="22" dstpinname="Style In">
   </LINK>
   </PATCH>
