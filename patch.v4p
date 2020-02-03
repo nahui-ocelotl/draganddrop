@@ -279,7 +279,7 @@
   </PIN>
   </NODE>
   <NODE id="52" nodename="Style (HTML)" systemname="Style (HTML)" componentmode="Hidden">
-  <BOUNDS type="Node" left="8610" top="5865" width="100" height="100">
+  <BOUNDS type="Node" left="7515" top="5850" width="100" height="100">
   </BOUNDS>
   <PIN pinname="Style In" visible="1">
   </PIN>
@@ -730,6 +730,16 @@
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
+  <NODE id="101" nodename="Styles.v4p" systemname="Styles" filename="Styles.v4p" componentmode="Hidden">
+  <BOUNDS type="Node" left="2850" top="3450" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Pointer" visible="1">
+  </PIN>
+  <PIN pinname="Left" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
   <LINK srcnodeid="22" srcpinname="Layers Out" dstnodeid="23" dstpinname="Element">
   </LINK>
   <LINK srcnodeid="25" srcpinname="Output String" dstnodeid="23" dstpinname="Attribute Name">
@@ -777,8 +787,6 @@
   <LINK srcnodeid="53" srcpinname="Output String" dstnodeid="52" dstpinname="Property Value">
   </LINK>
   <LINK srcnodeid="35" srcpinname="Style Out" dstnodeid="52" dstpinname="Style In">
-  </LINK>
-  <LINK srcnodeid="52" srcpinname="Style Out" dstnodeid="22" dstpinname="Style In">
   </LINK>
   <LINK srcnodeid="29" srcpinname="Y" dstnodeid="55" dstpinname="Y Input Value">
   </LINK>
@@ -879,5 +887,11 @@
   <LINK srcnodeid="100" srcpinname="Output 1" dstnodeid="72" dstpinname="Y Input Value">
   </LINK>
   <LINK srcnodeid="72" srcpinname="Y Output Value" dstnodeid="75" dstpinname="Switch">
+  </LINK>
+  <LINK srcnodeid="99" srcpinname="Y Output Value" dstnodeid="101" dstpinname="Pointer">
+  </LINK>
+  <LINK srcnodeid="70" srcpinname="Y Output Value" dstnodeid="101" dstpinname="Left">
+  </LINK>
+  <LINK srcnodeid="101" srcpinname="Style" dstnodeid="22" dstpinname="Style In">
   </LINK>
   </PATCH>
