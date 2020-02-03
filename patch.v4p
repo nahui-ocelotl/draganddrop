@@ -471,7 +471,7 @@
   </PIN>
   </NODE>
   <NODE id="72" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)" componentmode="InABox">
-  <BOUNDS type="Box" left="14595" top="2805" width="0" height="0">
+  <BOUNDS type="Box" left="13530" top="4695" width="0" height="0">
   </BOUNDS>
   <PIN pinname="Y Input Value" visible="1">
   </PIN>
@@ -499,7 +499,7 @@
   </PIN>
   </NODE>
   <NODE id="75" nodename="Switch (Value Input)" systemname="Switch (Value Input)" componentmode="Hidden">
-  <BOUNDS type="Node" left="17010" top="6885" width="100" height="100">
+  <BOUNDS type="Node" left="15330" top="6915" width="100" height="100">
   </BOUNDS>
   <PIN pinname="Switch" visible="1">
   </PIN>
@@ -646,6 +646,90 @@
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
+  <NODE id="91" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)" componentmode="InABox">
+  <BOUNDS type="Box" left="3525" top="9465" width="0" height="0">
+  </BOUNDS>
+  <PIN pinname="Y Input Value" visible="1">
+  </PIN>
+  <PIN pinname="Rows" visible="0" values="|1|">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="93" nodename="OnMouseUp (HTML)" systemname="OnMouseUp (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="3390" top="8730" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Element" visible="1">
+  </PIN>
+  <PIN pinname="Prevent Default" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="94" nodename="OnMouseDown (HTML)" systemname="OnMouseDown (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="1440" top="8730" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Element" visible="1">
+  </PIN>
+  <PIN pinname="Prevent Default" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="95" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)" componentmode="InABox">
+  <BOUNDS type="Box" left="1485" top="9480" width="0" height="0">
+  </BOUNDS>
+  <PIN pinname="Y Input Value" visible="1">
+  </PIN>
+  <PIN pinname="Rows" visible="0" values="|1|">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="96" nodename="OR (Boolean)" systemname="OR (Boolean)" componentmode="Hidden">
+  <BOUNDS type="Node" left="2430" top="10485" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Input 1" visible="1">
+  </PIN>
+  <PIN pinname="Input 2" visible="1">
+  </PIN>
+  <PIN pinname="Input Count" visible="0" values="|2|">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="98" nodename="Toggle (Animation)" systemname="Toggle (Animation)" componentmode="Hidden">
+  <BOUNDS type="Node" left="2100" top="11205" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Input" visible="1">
+  </PIN>
+  <PIN pinname="Reset" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="99" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)" componentmode="InABox">
+  <BOUNDS type="Box" left="2085" top="12045" width="0" height="0">
+  </BOUNDS>
+  <PIN pinname="Y Input Value" visible="1">
+  </PIN>
+  <PIN pinname="Rows" visible="0" values="|1|">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="100" nodename="FrameDelay (Animation)" systemname="FrameDelay (Animation)" componentmode="Hidden">
+  <BOUNDS type="Node" left="2115" top="13170" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Input 1" visible="1">
+  </PIN>
+  <PIN pinname="Default 1" visible="1">
+  </PIN>
+  <PIN pinname="Initialize" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
   <LINK srcnodeid="22" srcpinname="Layers Out" dstnodeid="23" dstpinname="Element">
   </LINK>
   <LINK srcnodeid="25" srcpinname="Output String" dstnodeid="23" dstpinname="Attribute Name">
@@ -772,10 +856,28 @@
   </LINK>
   <LINK srcnodeid="87" srcpinname="Output" dstnodeid="89" dstpinname="Input 1">
   </LINK>
-  <LINK srcnodeid="71" srcpinname="Output" dstnodeid="72" dstpinname="Y Input Value">
-  </LINK>
   <LINK srcnodeid="76" srcpinname="Output" dstnodeid="87" dstpinname="Input 2">
   </LINK>
-  <LINK srcnodeid="89" srcpinname="Output 1" dstnodeid="75" dstpinname="Switch">
+  <LINK srcnodeid="22" srcpinname="Layers Out" dstnodeid="93" dstpinname="Element">
+  </LINK>
+  <LINK srcnodeid="93" srcpinname="OnEvent" dstnodeid="91" dstpinname="Y Input Value">
+  </LINK>
+  <LINK srcnodeid="22" srcpinname="Layers Out" dstnodeid="94" dstpinname="Element">
+  </LINK>
+  <LINK srcnodeid="94" srcpinname="OnEvent" dstnodeid="95" dstpinname="Y Input Value">
+  </LINK>
+  <LINK srcnodeid="95" srcpinname="Y Output Value" dstnodeid="96" dstpinname="Input 1">
+  </LINK>
+  <LINK srcnodeid="91" srcpinname="Y Output Value" dstnodeid="96" dstpinname="Input 2">
+  </LINK>
+  <LINK srcnodeid="96" srcpinname="Output" dstnodeid="98" dstpinname="Input">
+  </LINK>
+  <LINK srcnodeid="98" srcpinname="Output" dstnodeid="99" dstpinname="Y Input Value">
+  </LINK>
+  <LINK srcnodeid="99" srcpinname="Y Output Value" dstnodeid="100" dstpinname="Input 1">
+  </LINK>
+  <LINK srcnodeid="100" srcpinname="Output 1" dstnodeid="72" dstpinname="Y Input Value">
+  </LINK>
+  <LINK srcnodeid="72" srcpinname="Y Output Value" dstnodeid="75" dstpinname="Switch">
   </LINK>
   </PATCH>
