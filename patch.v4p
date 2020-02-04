@@ -1,77 +1,61 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
   <PATCH>
-  <BOUNDS type="Window" width="17250" height="17265">
+  <BOUNDS type="Window" width="20235" height="17265">
   </BOUNDS>
-  <NODE id="1" nodename="Element (HTML)" systemname="Element (HTML)" componentmode="Hidden">
-  <BOUNDS type="Node" left="6750" top="3195" width="100" height="100">
+  <NODE id="5" nodename="image.v4p" systemname="image" filename="image.v4p" componentmode="Hidden">
+  <BOUNDS type="Node" left="9165" top="5640" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="style" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="7" nodename="Style (HTML)" systemname="Style (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="7470" top="3750" width="100" height="100">
   </BOUNDS>
   <PIN pinname="Style In" visible="1">
   </PIN>
-  <PIN pinname="Tag Name" visible="1" values="|img|">
+  <PIN pinname="Property Name" visible="1" values="|position|">
   </PIN>
-  <PIN pinname="Parent" visible="1">
-  </PIN>
-  <PIN pinname="Text" visible="1">
-  </PIN>
-  <PIN pinname="Enabled" visible="1">
-  </PIN>
-  <PIN pinname="Attribute Names" visible="0" values="||">
+  <PIN pinname="Property Value" visible="1" values="|fixed|">
   </PIN>
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
-  <NODE id="2" nodename="SetAttribute (HTML)" systemname="SetAttribute (HTML)" componentmode="Hidden">
-  <BOUNDS type="Node" left="8205" top="3945" width="100" height="100">
+  <NODE id="8" nodename="Style (HTML)" systemname="Style (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="8100" top="4305" width="100" height="100">
   </BOUNDS>
-  <PIN pinname="Element" visible="1">
+  <PIN pinname="Style In" visible="1">
   </PIN>
-  <PIN pinname="Attribute Name" visible="1" values="|src|">
+  <PIN pinname="Property Name" visible="1" values="|left|">
   </PIN>
-  <PIN pinname="Attribute Value" visible="1" values="|https://image.flaticon.com/icons/svg/628/628283.svg|">
-  </PIN>
-  <PIN pinname="Attribute BinSize" visible="1">
+  <PIN pinname="Property Value" visible="1" values="|100|">
   </PIN>
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
-  <NODE id="3" nodename="SetAttribute (HTML)" systemname="SetAttribute (HTML)" componentmode="Hidden">
-  <BOUNDS type="Node" left="7965" top="4560" width="100" height="100">
+  <NODE id="9" nodename="Style (HTML)" systemname="Style (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="8790" top="4890" width="100" height="100">
   </BOUNDS>
-  <PIN pinname="Element" visible="1">
+  <PIN pinname="Style In" visible="1">
   </PIN>
-  <PIN pinname="Attribute Name" visible="1" values="|width|">
+  <PIN pinname="Property Name" visible="1" values="|top|">
   </PIN>
-  <PIN pinname="Attribute Value" visible="1" values="|200|">
-  </PIN>
-  <PIN pinname="Attribute BinSize" visible="1">
+  <PIN pinname="Property Value" visible="1" values="|200|">
   </PIN>
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
-  <NODE id="4" nodename="SetAttribute (HTML)" systemname="SetAttribute (HTML)" componentmode="Hidden">
-  <BOUNDS type="Node" left="7545" top="5175" width="100" height="100">
-  </BOUNDS>
-  <PIN pinname="Element" visible="1">
-  </PIN>
-  <PIN pinname="Attribute Name" visible="1" values="|width|">
-  </PIN>
-  <PIN pinname="Attribute Value" visible="1" values="|200|">
-  </PIN>
-  <PIN pinname="Attribute BinSize" visible="1">
-  </PIN>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
-  <NODE id="5" nodename="image.v4p" systemname="image" filename="image.v4p" componentmode="Hidden">
-  <BOUNDS type="Node" left="11055" top="3915" width="100" height="100">
+  <NODE id="12" nodename="styles.v4p" systemname="styles" filename="styles.v4p" componentmode="Hidden">
+  <BOUNDS type="Node" left="6255" top="2700" width="100" height="100">
   </BOUNDS>
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
-  <LINK srcnodeid="1" srcpinname="Layers Out" dstnodeid="2" dstpinname="Element">
+  <LINK srcnodeid="7" srcpinname="Style Out" dstnodeid="8" dstpinname="Style In">
   </LINK>
-  <LINK srcnodeid="1" srcpinname="Layers Out" dstnodeid="3" dstpinname="Element">
+  <LINK srcnodeid="8" srcpinname="Style Out" dstnodeid="9" dstpinname="Style In">
   </LINK>
-  <LINK srcnodeid="1" srcpinname="Layers Out" dstnodeid="4" dstpinname="Element">
+  <LINK srcnodeid="9" srcpinname="Style Out" dstnodeid="5" dstpinname="style">
   </LINK>
   </PATCH>
