@@ -3,59 +3,11 @@
   <BOUNDS type="Window" width="20235" height="17265">
   </BOUNDS>
   <NODE id="5" nodename="image.v4p" systemname="image" filename="image.v4p" componentmode="Hidden">
-  <BOUNDS type="Node" left="9165" top="5640" width="100" height="100">
+  <BOUNDS type="Node" left="8085" top="4665" width="100" height="100">
   </BOUNDS>
   <PIN pinname="style" visible="1">
   </PIN>
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
-  <NODE id="7" nodename="Style (HTML)" systemname="Style (HTML)" componentmode="Hidden">
-  <BOUNDS type="Node" left="7470" top="3750" width="100" height="100">
-  </BOUNDS>
-  <PIN pinname="Style In" visible="1">
-  </PIN>
-  <PIN pinname="Property Name" visible="1" values="|position|">
-  </PIN>
-  <PIN pinname="Property Value" visible="1" values="|fixed|">
-  </PIN>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
-  <NODE id="8" nodename="Style (HTML)" systemname="Style (HTML)" componentmode="Hidden">
-  <BOUNDS type="Node" left="8100" top="4305" width="100" height="100">
-  </BOUNDS>
-  <PIN pinname="Style In" visible="1">
-  </PIN>
-  <PIN pinname="Property Name" visible="1" values="|left|">
-  </PIN>
-  <PIN pinname="Property Value" visible="1" values="|100|">
-  </PIN>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
-  <NODE id="9" nodename="Style (HTML)" systemname="Style (HTML)" componentmode="Hidden">
-  <BOUNDS type="Node" left="8790" top="4890" width="100" height="100">
-  </BOUNDS>
-  <PIN pinname="Style In" visible="1">
-  </PIN>
-  <PIN pinname="Property Name" visible="1" values="|top|">
-  </PIN>
-  <PIN pinname="Property Value" visible="1" values="|200|">
-  </PIN>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
-  <NODE id="12" nodename="styles.v4p" systemname="styles" filename="styles.v4p" componentmode="Hidden">
-  <BOUNDS type="Node" left="6255" top="2700" width="100" height="100">
-  </BOUNDS>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
-  <LINK srcnodeid="7" srcpinname="Style Out" dstnodeid="8" dstpinname="Style In">
-  </LINK>
-  <LINK srcnodeid="8" srcpinname="Style Out" dstnodeid="9" dstpinname="Style In">
-  </LINK>
-  <LINK srcnodeid="9" srcpinname="Style Out" dstnodeid="5" dstpinname="style">
-  </LINK>
   </PATCH>
