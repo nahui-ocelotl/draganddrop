@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
   <PATCH>
-  <BOUNDS type="Window" width="9450" height="17265">
+  <BOUNDS type="Window" width="8955" height="17265">
   </BOUNDS>
   <NODE id="8" nodename="Mouse (System Global)" systemname="Mouse (System Global)" componentmode="Hidden">
   <BOUNDS type="Node" left="4590" top="285" width="100" height="100">
@@ -934,14 +934,6 @@
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
-  <NODE id="121" nodename="NOT (Boolean)" systemname="NOT (Boolean)" componentmode="Hidden">
-  <BOUNDS type="Node" left="11490" top="12240" width="100" height="100">
-  </BOUNDS>
-  <PIN pinname="Input" visible="1">
-  </PIN>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
   <LINK srcnodeid="8" srcpinname="X" dstnodeid="9" dstpinname="Y Input Value">
   </LINK>
   <LINK srcnodeid="8" srcpinname="Y" dstnodeid="10" dstpinname="Y Input Value">
@@ -1102,8 +1094,6 @@
   </LINK>
   <LINK srcnodeid="120" srcpinname="Output" dstnodeid="110" dstpinname="Input">
   </LINK>
-  <LINK srcnodeid="110" srcpinname="Output" dstnodeid="121" dstpinname="Input">
-  </LINK>
-  <LINK srcnodeid="121" srcpinname="Output" dstnodeid="111" dstpinname="Y Input Value">
+  <LINK srcnodeid="110" srcpinname="Output" dstnodeid="111" dstpinname="Y Input Value">
   </LINK>
   </PATCH>
